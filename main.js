@@ -9,9 +9,9 @@ var jsApp = {
     me.state.change(me.state.LOADING);
   },
   loaded: function() {
+    me.entityPool.add("player", PlayerEntity);
     me.state.set(me.state.PLAY, new PlayScreen());
     me.state.change(me.state.PLAY);
-    me.entityPool.add("player", PlayerEntity);
   }
 };
 window.onReady(function() {
