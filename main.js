@@ -10,10 +10,11 @@ var jsApp = {
   },
   loaded: function() {
     me.entityPool.add("player", PlayerEntity);
-    me.state.set(me.state.PLAY, new PlayScreen());
-    me.state.change(me.state.PLAY);
+    me.state.set(me.state.MENU, new TitleScreen());
+    me.state.transition("fade", "#2FA2C2", 250);
+    me.state.change(me.state.MENU);
   }
 };
 window.onReady(function() {
   jsApp.onload();
-});
+}); //end of file
