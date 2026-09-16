@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="5">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="9">
  <tileset firstgid="1" source="levelSprites.tsx"/>
  <tileset firstgid="14" source="collision.tsx"/>
- <objectgroup id="5" name="player"/>
+ <tileset firstgid="19" source="player.tsx"/>
+ <objectgroup id="5" name="player">
+  <object id="6" name="player" x="96.9728" y="415.26" width="16" height="16">
+   <properties>
+    <property name="image" value="player"/>
+    <property name="spritewidth" type="int" value="16"/>
+   </properties>
+  </object>
+ </objectgroup>
  <layer id="1" name="foreground" width="40" height="30">
   <data encoding="csv">
 4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
