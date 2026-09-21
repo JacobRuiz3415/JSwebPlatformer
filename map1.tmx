@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="10">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="12">
  <tileset firstgid="1" name="levelSprites" tilewidth="16" tileheight="16" tilecount="13" columns="13">
   <image source="levelSprites.png" width="208" height="16"/>
  </tileset>
@@ -14,6 +14,7 @@
  <tileset firstgid="19" name="player" tilewidth="16" tileheight="16" tilecount="2" columns="2">
   <image source="player.png" width="32" height="16"/>
  </tileset>
+ <tileset firstgid="21" source="coin.tsx"/>
  <layer id="1" name="foreground" width="40" height="30">
   <data encoding="csv">
 4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
@@ -90,4 +91,12 @@
 0,0,0,0,0,0,0,0,0,14,0,0,0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup id="6" name="coin">
+  <object id="11" name="coin" x="239.363" y="388.909" width="16" height="16">
+   <properties>
+    <property name="image" value="coin"/>
+    <property name="spritewidth" type="int" value="16"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>

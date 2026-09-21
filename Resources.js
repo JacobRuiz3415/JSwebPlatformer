@@ -15,5 +15,9 @@ var resources = [{
 },
 { name: "titleScreen",  type: "image",
   src: "titleScreen.png"
+}, // Reminder: Add these commas to preceding objects as you go!
+{ name: "coin",
+  type: "image",
+  src: "coin.png"
 }
 ];
