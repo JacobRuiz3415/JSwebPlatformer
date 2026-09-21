@@ -4,6 +4,11 @@ var resources = [{
   src: "levelSprites.png"
 }, 
 {
+  name: "collision",
+  type: "image",
+  src: "collision.png"
+},
+{
   name: "level1",
   type: "tmx",
   src: "map1.tmx"
@@ -13,7 +18,7 @@ var resources = [{
   type: "image",
   src: "player.png"
 },
-{ name: "titleScreen",  type: "image",
+{ name: "titleScreen", type: "image",
   src: "titleScreen.png"
 }, // Reminder: Add these commas to preceding objects as you go!
 { name: "coin",

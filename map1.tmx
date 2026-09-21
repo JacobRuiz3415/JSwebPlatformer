@@ -14,7 +14,9 @@
  <tileset firstgid="19" name="player" tilewidth="16" tileheight="16" tilecount="2" columns="2">
   <image source="player.png" width="32" height="16"/>
  </tileset>
- <tileset firstgid="21" source="coin.tsx"/>
+ <tileset firstgid="21" name="coin" tilewidth="16" tileheight="16" tilecount="4" columns="4">
+  <image source="coin.png" width="64" height="16"/>
+ </tileset>
  <layer id="1" name="foreground" width="40" height="30">
   <data encoding="csv">
 4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
@@ -57,6 +59,14 @@
    </properties>
   </object>
  </objectgroup>
+ <objectgroup id="6" name="coin">
+  <object id="11" name="coin" x="239.363" y="388.909" width="16" height="16">
+   <properties>
+    <property name="image" value="coin"/>
+    <property name="spritewidth" type="int" value="16"/>
+   </properties>
+  </object>
+ </objectgroup>
  <layer id="2" name="collision" width="40" height="30">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -91,12 +101,4 @@
 0,0,0,0,0,0,0,0,0,14,0,0,0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="6" name="coin">
-  <object id="11" name="coin" x="239.363" y="388.909" width="16" height="16">
-   <properties>
-    <property name="image" value="coin"/>
-    <property name="spritewidth" type="int" value="16"/>
-   </properties>
-  </object>
- </objectgroup>
 </map>
