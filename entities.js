@@ -22,7 +22,13 @@ var PlayerEntity = me.ObjectEntity.extend({
   }, // Don't forget to add this comma here
   gameOver: function() {
     me.state.change(me.state.MENU);
-  }
+    document.getElementById('game_state').innerHTML = "Game Over";
+    document.getElementById('instructions').innerHTML = "";
+  },youWin: function() {
+  me.state.change(me.state.MENU);
+  document.getElementById('game_state').innerHTML = "You Win!";
+  document.getElementById('instructions').innerHTML = "";
+}
 }); //end of player
 
 var CoinEntity = me.CollectableEntity.extend({
