@@ -23,7 +23,7 @@ var PlayerEntity = me.ObjectEntity.extend({
   gameOver: function() {
     me.state.change(me.state.MENU);
     document.getElementById('game_state').innerHTML = "Game Over";
-    document.getElementById('instructions').innerHTML = "";
+    document.getElementById('instructions').innerHTML = "";
   },youWin: function() {
   me.state.change(me.state.MENU);
   document.getElementById('game_state').innerHTML = "You Win!";
@@ -32,13 +32,17 @@ var PlayerEntity = me.ObjectEntity.extend({
 }); //end of player
 
 var CoinEntity = me.CollectableEntity.extend({
-  init: function(x, y, settings) {
-    this.parent(x, y, settings);
-  },
-  onCollision : function (res, obj) {
-    this.collidable = false;
-    me.game.remove(this);
-  }  
+  init: function(x, y, settings) {
+    this.parent(x, y, settings);
+  },
+  onCollision : function (res, obj) {
+    me.gamestat.updateValue("coins", 1);
+     this.collidable = false;
+    me.game.remove(this);
+    if(me.gamestat.getItemValue("coins") === me.gamestat.getItemValue("totalCoins")){
+      obj.youWin();
+    }
+  }  
 }); //end of coin
 
 var EnemyEntity = me.ObjectEntity.extend({

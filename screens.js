@@ -1,4 +1,7 @@
 var PlayScreen = me.ScreenObject.extend({
+  onDestroyEvent: function() {
+    me.gamestat.reset("coins");
+  },
   onResetEvent: function() {
     me.levelDirector.loadLevel("level1");
     me.input.bindKey(me.input.KEY.LEFT, "left");
