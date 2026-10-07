@@ -11,6 +11,8 @@ var PlayScreen = me.ScreenObject.extend({
     me.input.bindKey(me.input.KEY.SPACE, "jump", true);
   }
 });
+
+//the title screen
 var TitleScreen = me.ScreenObject.extend({
   init: function() {
     this.parent(true);

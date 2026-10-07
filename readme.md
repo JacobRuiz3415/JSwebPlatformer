@@ -1,3 +1,3 @@
 # Web Platformer Melon JS
-- based on  web game book
+- based on  web game cookbook
 - added a map
